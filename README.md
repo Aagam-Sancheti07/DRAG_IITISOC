@@ -88,5 +88,5 @@ Full 6-degree-of-freedom rigid-body flight simulation: 3 translational + 3 rotat
 ## Suggested Run Order
 
 1. Run the five pre-processing scripts once (`thrustcurve.m`, `dragcurve.m`, `densityvsalt.m`, `openrocketdata.m`, `Cpvsdep.m`) to generate the `.mat` lookup tables from your raw CSVs.
-2. Open `sixDOF.slx` (full sim + EKF) or `threeDOF.slx` (quick point-mass trajectory) — both load the `.mat` files from the base workspace.
+2. Open `sixDOF.slx` (full sim + EKF) — this load the `.mat` files from the base workspace.
 3. If comparing braked vs. unbraked flight, run the sim twice (with/without airbrake active), capture `pos_braked` and `pos_unbraked`, then run `trajectory.m` to plot both.
